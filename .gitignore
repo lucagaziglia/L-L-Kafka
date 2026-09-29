@@ -1,0 +1,22 @@
+# Tools (JDK, gh CLI)
+.tools/
+
+# Kafka binary distribution
+kafka_2.13-4.3.1/
+
+# Kafka data & logs
+/tmp/kraft-combined-logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Environment variables
+.env
+.env.local
