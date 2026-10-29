@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ll-kafka:risk-observed:v1",
+  "title": "Risk observation v1 (synthetic lab)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_id", "entity_id", "event_type", "event_time_ms", "payload"],
+  "properties": {
+    "event_id": {"type": "string", "minLength": 1},
+    "entity_id": {"type": "string", "minLength": 1},
+    "event_type": {"const": "risk.observed.v1"},
+    "event_time_ms": {"type": "integer", "minimum": 0},
+    "phase": {"enum": ["normal", "drift"], "description": "Anotación del generador, nunca feature"},
+    "payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["amount", "device_risk", "attempts_1m"],
+      "properties": {
+        "amount": {"type": "number", "minimum": 0},
+        "device_risk": {"type": "number", "minimum": 0, "maximum": 1},
+        "attempts_1m": {"type": "integer", "minimum": 0}
+      }
+    }
+  }
+}

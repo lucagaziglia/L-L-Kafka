@@ -1,0 +1,21 @@
+{
+  "verified": true,
+  "input_count": 3,
+  "output": [
+    {
+      "entity_id": "a",
+      "window_start": "2026-10-29 08:00:00",
+      "window_end": "2026-10-29 08:01:00",
+      "observations": 2,
+      "total_amount": 30.0
+    },
+    {
+      "entity_id": "b",
+      "window_start": "2026-10-29 08:01:00",
+      "window_end": "2026-10-29 08:02:00",
+      "observations": 1,
+      "total_amount": 50.0
+    }
+  ],
+  "engine": "Apache Flink 2.1.3"
+}

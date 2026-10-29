@@ -1,0 +1,47 @@
+{
+  "case": "ml",
+  "input_count": 165,
+  "decision_count": 80,
+  "persisted_count": 80,
+  "topics": [
+    "ll.ml.input.04731888a9",
+    "ll.ml.decisions.04731888a9"
+  ],
+  "broker_port": 19092,
+  "verified": true,
+  "engine": {
+    "mode": "frozen",
+    "duplicates": 5,
+    "pending_labels": 0,
+    "phases": {
+      "normal": {
+        "n": 40,
+        "precision": 0.6363636363636364,
+        "recall": 0.9130434782608695,
+        "brier": 0.18724020914103748,
+        "log_loss": 0.5521690173967138,
+        "expected_cost_per_event": 13.5,
+        "confusion": {
+          "tp": 21,
+          "fp": 12,
+          "tn": 5,
+          "fn": 2
+        }
+      },
+      "drift": {
+        "n": 40,
+        "precision": 0.53125,
+        "recall": 0.8947368421052632,
+        "brier": 0.2414520949010987,
+        "log_loss": 0.6836327435870561,
+        "expected_cost_per_event": 15.75,
+        "confusion": {
+          "tp": 17,
+          "fp": 15,
+          "tn": 6,
+          "fn": 2
+        }
+      }
+    }
+  }
+}

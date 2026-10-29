@@ -1,0 +1,65 @@
+{
+  "stats": {
+    "accepted": 11,
+    "duplicates": 1,
+    "consent_dropped": 1,
+    "late": 1,
+    "invalid": 1,
+    "duplicate_transactions": 1
+  },
+  "actions": [
+    {
+      "action_id": "assist:synthetic-s2:s2",
+      "session_id": "s2",
+      "session_key": "synthetic-s2:s2",
+      "action": "assistance_eligible",
+      "reason": "checkout_without_known_purchase"
+    },
+    {
+      "action_id": "assist:synthetic-s5:s5",
+      "session_id": "s5",
+      "session_key": "synthetic-s5:s5",
+      "action": "assistance_eligible",
+      "reason": "checkout_without_known_purchase"
+    },
+    {
+      "action_id": "cancel:synthetic-s5:s5",
+      "cancels": "assist:synthetic-s5:s5",
+      "session_id": "s5",
+      "session_key": "synthetic-s5:s5",
+      "action": "cancel_assistance"
+    }
+  ],
+  "dlq": [
+    {
+      "reason": "purchase requiere value no negativo y finito"
+    }
+  ],
+  "windows": [
+    {
+      "start_ms": 1793260800000,
+      "currency": "USD",
+      "campaign": "demo-search",
+      "events": 9,
+      "sessions": 4,
+      "revenue": 120.0,
+      "purchases": 1
+    },
+    {
+      "start_ms": 1793260860000,
+      "currency": "USD",
+      "campaign": "demo-search",
+      "events": 2,
+      "sessions": 2,
+      "revenue": 0.0,
+      "purchases": 0
+    }
+  ],
+  "funnel_reach": {
+    "add_to_cart": 1,
+    "begin_checkout": 4,
+    "page_view": 4,
+    "purchase": 1,
+    "view_item": 1
+  }
+}

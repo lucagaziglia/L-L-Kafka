@@ -1,5 +1,21 @@
 # 🚀 L&L - Apache Kafka
 
+## Plan de estudio y hands on de arquitectura orientada a eventos
+
+Nuevo recorrido de 16 semanas (8 h/semana) que conecta Analytics/GTM con Kafka, Flink, analítica y ML en tiempo real.
+
+- **[Empezar por acá](estudio-eventos/README.md)**
+- [Plan completo y entregables](estudio-eventos/PLAN_DE_ESTUDIO.md)
+- [Primer encuentro de 90 minutos](estudio-eventos/labs/00_PRIMER_ENCUENTRO.md)
+- [Hands on de analítica y ML](estudio-eventos/labs/03_ANALITICA_ML.md)
+- [Hands on de marketing con eventos Analytics/GTM](estudio-eventos/labs/04_MARKETING_GA4_GTM.md)
+- [Evidencia de ejecución y alcance](estudio-eventos/evidencias/VALIDACION.md)
+
+Incluye dos hands on basados en el workshop oficial de Confluent, código Python, SQL local/cloud, contratos, ejercicios de fallos y fuentes.
+
+---
+
+
 Repositorio de pruebas para aprender y experimentar con **Apache Kafka 4.3.1** (KRaft mode).
 
 ## 📋 Requisitos previos
